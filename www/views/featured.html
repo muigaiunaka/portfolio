@@ -1,0 +1,18 @@
+<ion-view title="featured" ng-controller="FeaturedCtrl">
+  <ion-content>
+    <ion-slides options="data.sliderOptions" slider="data.sliderDelegate">
+      <ion-slide-page ng-repeat="project in featured.projects" class="featured">
+        <figure>
+          <img ng-repeat='img in project.images' ng-src='img/{{img}}'>
+        </figure>
+        <section>
+          <h1>{{project.name}}</h1>
+          <h2><span>Role:</span>{{project.role}}</h2>
+          <h2><span>Type:</span>{{project.type}}</h2>
+          <h2><span>Stack:</span>{{project.stack}}</h2>
+          <h2><span>Status:</span>{{project.status}}</h2>
+        </section>
+      </ion-slide-page>
+</ion-slides>
+  </ion-content>
+</ion-view>

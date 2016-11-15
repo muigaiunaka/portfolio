@@ -1,0 +1,71 @@
+/* Empty. Add your own CSS if you like */
+
+ion-slides{
+  height: 100vh !important;
+}
+
+nav, nav ul, .portfolio {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+nav {
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+nav ul {
+  width: 100%;
+}
+
+nav ul li a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.swiper-slide:nth-child(1) {
+  background-color: #521A36;
+  background-color: rgb(82,26,54);
+}
+
+.swiper-slide:nth-child(2) {
+  background-color: yellow;
+}
+
+.swiper-slide:nth-child(3) {
+  background-color: indigo;
+}
+
+.swiper-slide:nth-child(4) {
+  background-color: cyan;
+}
+
+.featured figure, .featured section {
+  width: 50%;
+  height: 50%;
+}
+
+figure img {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  margin: 0 auto;
+}
+
+/*PORTFOLIO*/
+.portfolio {
+  width: 100%;
+  background-color: salmon;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+
+.portfolio div {
+  width: 25%;
+  min-height: 25vh;
+}
