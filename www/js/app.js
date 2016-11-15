@@ -41,7 +41,7 @@ angular.module('portfolio', ['ionic'])
                 url: "/about",
                 templateUrl: 'views/about.html'
             });
-        $urlRouterProvider.otherwise('/featured');
+        $urlRouterProvider.otherwise('/');
     })
 
 // CONTROLLER
